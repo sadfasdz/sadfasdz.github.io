@@ -21,7 +21,6 @@ export const useSearchStore = defineStore('SearchStore', () => {
     const data = await response.json()
     movies.value = data.films
     isLoader.value = false
-    console.log(movies)
   }
 
   function addToUserMovies(movie) {
